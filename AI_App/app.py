@@ -9,7 +9,7 @@ from numpy import array
 from keras.datasets import imdb
 from keras.preprocessing import sequence
 from keras.models import load_model
-#imported the libraries
+
 
 IMAGE_FOLDER = os.path.join('static', 'img_pool')
 
@@ -24,7 +24,6 @@ def init():
     graph = tf.get_default_graph()
 
 
-    #########################Code for Sentiment Analysis
 @app.route('/', methods=['GET', 'POST'])
 def home():
 
