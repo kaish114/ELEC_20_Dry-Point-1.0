@@ -191,8 +191,8 @@ body {
   <!-- Tab panes -->
   <div role="tabpanel" class="tab-pane" id="tab2">
       <div class="row">
-    <div class="col-lg-12">
-      <h2>Enter the Text to get the Sentiment</h2>
+    <div class="col-lg-12"> <font color="red">
+      <h2>Enter the Text to get the Sentiment</h2> </font>
     </div>
     </div>
 
@@ -209,7 +209,7 @@ body {
         </div>
 
         <div class="col-md-3">
-          <h1>Sentiment</h1>
+          <h1> <font color = 'red'>Sentiment</font> </h1>
           <div class="alert alert-primary" role="alert">
             {% if probability %}
               {{ sentiment }}
@@ -218,7 +218,7 @@ body {
         </div>
 
         <div class="col-md-3">
-          <h1>Probability</h1>
+          <h1> <font color = 'red'>Probability</font> </h1>
           <div class="alert alert-primary" role="alert">
             {% if probability %}
               {{ probability }}
@@ -229,7 +229,7 @@ body {
         <!--Image -->
             <div class="col-sm-6"></div>
               {% if probability %}
-                <div class="col-sm-2"><h1>Emotion</h1>
+                <div class="col-sm-2"><h1> <font color = 'red'>Emotion</font> </h1>
                 <img src="{{ image }}" alt="Image">
               {% endif %}
             </div>
