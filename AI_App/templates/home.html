@@ -1,7 +1,12 @@
+<!------ Include the above in your HEAD tag ---------->
+
 
 <!DOCTYPE html><html lang='en' class=''>
 <head>
-  
+  <!--<script src="https://kit.fontawesome.com/f75621122b.js"></script>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styling.css')}}">
@@ -61,6 +66,7 @@ a:hover {
 }
 /* end of reset styles */
 body {
+  background-color: #757575;
   color: #6d747e;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -168,27 +174,22 @@ body {
 }
 </style>
 
-</head>
-<body>
+</head><body>
 <div class="container tall">
   <ul class="nav nav-tabs" role="tablist">
     <li role="presentation" class="active">
       <label class="radiobtn">
-
         <input type="radio" name="options" id="option2" autocomplete="off" checked>
-        <div class="icon" ></div>
+        <div class="icon"></div>
       </label>
       <a href="#tab2" role="tab" data-toggle="tab">
-
-        Sentiment Analysis Web App Using LSTM
+        Sentiment Analysis Using LSTM
       </a>
     </li>
   </ul>
 
-
   <!-- Tab panes -->
   <div role="tabpanel" class="tab-pane" id="tab2">
-    <h1>Team Name</h1>
       <div class="row">
     <div class="col-lg-12">
       <h2>Enter the Text to get the Sentiment</h2>
@@ -245,8 +246,9 @@ body {
 $('.nav-tabs a').click(function(){
     $(".tab-content").animate({ scrollTop: 0 }, 600);
  });
-
+//# sourceURL=pen.js
 </script>
+
 </body>
 </html>
 
